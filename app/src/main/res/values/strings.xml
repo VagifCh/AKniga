@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AKniga</string>
+    <string name="hintSearch">Введите текст</string>
+    <string name="result">Результат</string>
+    <string name="buttonforsearch">Поиск</string>
+    <string name="imageName">Обложка</string>
+    <string name="author">Автор книги</string>
+    <string name="bookNames">Название книги</string>
+    <string name="reader">Чтец</string>
+    <string name="duration">Время</string>
+    <string name="desc">Описание</string>
+    <string name="style">Жанр</string>
+    <string name="mainHost_">"https://pda.izib.uk"</string>
+    <string name="mainHost">"https://mail.ir-tech.ru/1.htm"</string>
+    <string name="mainHostPic">"https://mail.ir-tech.ru/"</string>
+    <string name="userAgent">"Mozilla/5.0 (Android 12; Mobile; rv:88.0) Gecko/88.0 Firefox/88.0"</string>
+</resources>
