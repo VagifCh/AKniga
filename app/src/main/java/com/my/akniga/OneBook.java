@@ -35,6 +35,8 @@ public class OneBook extends AppCompatActivity {
 
             String url = book.getLink();
             new GetURLData().execute(url);
+            ImageView cover =  findViewById(R.id.bookCover);
+            Picasso.get().load(book.getBookCover()).into(cover);
             ((TextView) findViewById(R.id.bookName)).setText(book.getName());
             ((TextView) findViewById(R.id.authorBookSingle)).setText(book.getAuthor());
             ((TextView) findViewById(R.id.readerBookSingle)).setText(book.getReader());
@@ -86,12 +88,12 @@ public class OneBook extends AppCompatActivity {
             super.onPostExecute(result);
             Document document = Jsoup.parse(result);
             Elements elements = document.getElementsByClass("book--table");
-            for(Element element : elements){
-                String bookCover = getString(R.string.mainHost) + element.getElementsByTag("img").get(0).attr("src").toString();
-                ImageView iv = findViewById(R.id.bookCover);
-                Picasso.get().load(bookCover).into(iv);
-                System.out.println(bookCover);
-            }
+            //for(Element element : elements){
+                //String bookCover = getString(R.string.mainHost) + element.getElementsByTag("img").get(0).attr("src").toString();
+                //ImageView iv = findViewById(R.id.bookCover);
+                //Picasso.get().load(bookCover).into(iv);
+                //System.out.println(bookCover);
+            //}
 
         }
     }
